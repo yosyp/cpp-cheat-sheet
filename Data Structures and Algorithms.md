@@ -294,8 +294,8 @@ std::string value = m.at("key");
 unsigned int size = m.size();
 
 // Iterate
-for(std::map<int>::iterator it = m.begin(); it != m.end(); it++) {
-    std::cout << *it << std::endl;
+for(std::map<std::string, std::string>::iterator it = m.begin(); it != m.end(); it++) {
+    std::cout << it->first << ": " << it->second << std::endl;
 }
 
 // Remove by key
